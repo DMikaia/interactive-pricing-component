@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="h-screen bg-center bg-no-repeat bg-cover p-4 flex flex-col justify-center items-center gap-2">
+      <body className="lg:p-0 lg:gap-0 xl:gap-2 xl:p-4 caret-transparent h-screen bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center">
         {children}
       </body>
     </html>
