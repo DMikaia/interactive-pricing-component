@@ -1,0 +1,72 @@
+/* ? Slider custom style */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* * Chrome, Safari, Opera, and Edge Chromium * */
+
+input[type="range"]::-webkit-slider-runnable-track {
+  position: relative;
+  background: var(--Light-Grayish-Blue);
+  height: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../../public/icons/icon-slider.svg);
+  border: none;
+  border-radius: 50%;
+  margin-top: -12px; /* Centers thumb on the track */
+  background-color: var(--Strong-Cyan);
+  height: 2rem;
+  width: 2rem;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  filter: drop-shadow(0px 5px 5px var(--Soft-Cyan));
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  background-color: var(--Strong-Cyan-darker);
+}
+
+/* * Firefox * */
+
+input[type="range"]::-moz-range-track {
+  background: var(--Light-Grayish-Blue);
+  height: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../../public/icons/icon-slider.svg);
+  border: none;
+  border-radius: 50%;
+  background-color: var(--Strong-Cyan);
+  height: 2rem;
+  width: 2rem;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  filter: drop-shadow(0px 5px 5px var(--Soft-Cyan));
+}
+
+input[type="range"]::-moz-range-thumb:active {
+  background-color: var(--Strong-Cyan-darker);
+}
+
+input[type="range"]::-moz-range-progress {
+  background-color: var(--Soft-Cyan);
+  height: 0.5rem;
+  border-radius: 0.25rem;
+}
