@@ -1,6 +1,6 @@
 import SliderPart from "@/components/sliderPart/slider";
 import BillingPart from "@/components/billing/billing";
-import FeaturesListTrial from "@/components/FeaturesListTrial/featuresListTrial";
+import List from "@/components/List/List";
 
 export default function Main() {
   return (
@@ -13,7 +13,7 @@ export default function Main() {
 
           <hr className="w-full" />
 
-          <FeaturesListTrial></FeaturesListTrial>
+          <List></List>
         </section>
       </main>
     </>
