@@ -35,7 +35,9 @@ export default function SliderPart() {
           id="input-box"
           className="w-full pr-5 pl-5 md:pr-8 md:pl-8 top-12 absolute md:top-0 md:relative"
         >
+          <label htmlFor="rangeInput" className="hidden"></label>
           <input
+            id="rangeInput"
             type="range"
             min={0}
             max={32}

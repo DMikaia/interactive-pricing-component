@@ -38,9 +38,3 @@ body {
   height: 100vh;
   background-image: url(../../public/bg-pattern.svg);
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
