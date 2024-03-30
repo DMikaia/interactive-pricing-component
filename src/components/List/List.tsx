@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function FeaturesListTrial() {
   return (
     <>
-      <section className="pr-8 pl-8 flex justify-between items-center flex-col md:flex-row gap-6 md:gap-0">
+      <div className="pr-8 pl-8 flex justify-between items-center flex-col md:flex-row gap-6 md:gap-0">
         <ul className="text-[color:var(--Grayish-Blue)] font-semibold text-sm flex flex-col gap-3">
           <li className="flex gap-2 items-center">
             <Image
@@ -36,7 +36,7 @@ export default function FeaturesListTrial() {
         <button className="pt-3 pb-3 text-sm pl-10 pr-10 text-[color:var(--Pale-Blue)] focus:text-[color:var(--White)] hover:text-[color:var(--White)] rounded-3xl w-fit h-fit bg-[color:var(--Dark-Desaturated-Blue)] ease-linear duration-300">
           Start my trial
         </button>
-      </section>
+      </div>
     </>
   );
 }

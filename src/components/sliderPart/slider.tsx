@@ -18,8 +18,8 @@ export default function SliderPart() {
 
   return (
     <>
-      <section className="flex flex-col gap-8 relative">
-        <section className="flex justify-center flex-col gap-16 md:gap-8 md:flex-row md:justify-between items-center pr-5 pl-5 md:pr-8 md:pl-8 lg:gap-0">
+      <div className="flex flex-col gap-8 relative">
+        <div className="flex justify-center flex-col gap-16 md:gap-8 md:flex-row md:justify-between items-center pr-5 pl-5 md:pr-8 md:pl-8 lg:gap-0">
           <p className="uppercase text-[color:var(--Grayish-Blue)] tracking-widest">
             100k Pageviews
           </p>
@@ -29,13 +29,12 @@ export default function SliderPart() {
             </span>
             <span className="text-[color:var(--Grayish-Blue)]">/ month</span>
           </div>
-        </section>
+        </div>
 
-        <section
+        <div
           id="input-box"
           className="w-full pr-5 pl-5 md:pr-8 md:pl-8 top-12 absolute md:top-0 md:relative"
         >
-          <label htmlFor="rangeInput" className="hidden"></label>
           <input
             id="rangeInput"
             type="range"
@@ -45,9 +44,10 @@ export default function SliderPart() {
             defaultValue={16}
             className="w-full"
             onChange={(e) => changeMoneyValue(e)}
+            aria-label="Money value adjuster (in units)" // Add your desired descriptive label here
           />
-        </section>
-      </section>
+        </div>
+      </div>
     </>
   );
 }
